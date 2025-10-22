@@ -57,7 +57,7 @@ TELEM TBitField::GetMemMask(const int n) const // битовая маска дл
     int elemSize = sizeof(TELEM) * 8;
     int bitPos = n % elemSize;
 
-    return (1 >> (bitPos - 1));
+    return (1 << bitPos);
 }
 
 // доступ к битам битового поля
@@ -71,32 +71,23 @@ void TBitField::SetBit(const int n) // установить бит
 {
     if ((n < 0) || (n > BitLen)) throw - 1;
 
-    int elemSize = sizeof(TELEM) * 8;
-    pMem[n / elemSize] |= (1 >> (n%elemSize));
+    pMem[GetMemIndex(n)] |= GetMemMask(n);
 }
 
 void TBitField::ClrBit(const int n) // очистить бит
 {
     if ((n < 0) || (n > BitLen)) throw - 1;
 
-    int elemSize = sizeof(TELEM) * 8;
-    pMem[n / elemSize] &= ~(1 >> (n % elemSize));
+    pMem[GetMemIndex(n)] &= ~(GetMemMask(n));
 }
 
 int TBitField::GetBit(const int n) const // получить значение бита
 {
     if ((n < 0) || (n > BitLen)) throw - 1;
 
-    int elemSize = sizeof(TELEM) * 8;
-    int memInd = n / elemSize;
-    int bitPos = n % elemSize;
-    TELEM memElem = pMem[memInd];
-    
-    memElem |= (1 >> bitPos);
-
-    if (memElem == pMem[memInd])
-        return 1;
-    return 0;
+    if ((pMem[GetMemIndex(n)] & GetMemMask(n)) == 0)
+        return 0;
+    return 1;
 }
 
 // битовые операции
@@ -217,10 +208,12 @@ TBitField TBitField::operator&(const TBitField &bf) // операция "и"
 TBitField TBitField::operator~(void) // отрицание
 {
     TBitField res(this->BitLen);
-    for (int i = 0; i < MemLen; i++)
-    {
-        res.pMem[i] |= ~(this->pMem[i]);
-    }
+    //for (int i = 0; i < MemLen; i++)
+    //{
+    //    res.pMem[i] = ~(this->pMem[i]);
+    //}
+    for (int i = 0; i < (this->BitLen); i++)
+        if (this->GetBit(i) == 0) res.SetBit(i);
 
     return res;
 }
@@ -229,6 +222,17 @@ TBitField TBitField::operator~(void) // отрицание
 
 istream &operator>>(istream &istr, TBitField &bf) // ввод
 {
+    int n;
+    istr >> n;
+    cout << endl;
+    int bitInd;
+    for (int i = 0; i < n; i++)
+    {
+        cout << "Какой бит Вы хотите установить? ";
+        istr >> bitInd;
+        cout << endl;
+        bf.SetBit(bitInd);
+    }
     return istr;
 }
 

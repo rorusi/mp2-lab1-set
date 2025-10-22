@@ -125,6 +125,8 @@ TSet TSet::operator~(void) // дополнение
 
 istream &operator>>(istream &istr, TSet &s) // ввод
 {
+    cout << "Сколько элементов Вы хотите включить в множество? ";
+    istr >> s.BitField;
     return istr;
 }
 
@@ -132,7 +134,7 @@ ostream& operator<<(ostream &ostr, const TSet &s) // вывод
 {
     for (int i = 0; i < s.MaxPower; i++)
         if (s.IsMember(i))
-            ostr << i;
+            ostr << i << ' ';
     ostr << endl;
     return ostr;
 }
