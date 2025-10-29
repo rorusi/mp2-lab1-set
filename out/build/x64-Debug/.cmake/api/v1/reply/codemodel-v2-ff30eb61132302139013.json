@@ -16,7 +16,7 @@
 					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
 					"minimumCMakeVersion" : 
 					{
-						"string" : "2.8"
+						"string" : "3.10"
 					},
 					"projectIndex" : 0,
 					"source" : "."
@@ -26,14 +26,14 @@
 					"jsonFile" : "directory-src-Debug-c94b7c2814d5a21df52c.json",
 					"minimumCMakeVersion" : 
 					{
-						"string" : "2.8"
+						"string" : "3.10"
 					},
 					"parentIndex" : 0,
 					"projectIndex" : 0,
 					"source" : "src",
 					"targetIndexes" : 
 					[
-						2
+						3
 					]
 				},
 				{
@@ -41,14 +41,15 @@
 					"jsonFile" : "directory-samples-Debug-026e8de27727d40e5852.json",
 					"minimumCMakeVersion" : 
 					{
-						"string" : "2.8"
+						"string" : "3.10"
 					},
 					"parentIndex" : 0,
 					"projectIndex" : 0,
 					"source" : "samples",
 					"targetIndexes" : 
 					[
-						1
+						1,
+						2
 					]
 				},
 				{
@@ -56,7 +57,7 @@
 					"jsonFile" : "directory-gtest-Debug-2618f1bde6c55d7920ba.json",
 					"minimumCMakeVersion" : 
 					{
-						"string" : "2.8"
+						"string" : "3.10"
 					},
 					"parentIndex" : 0,
 					"projectIndex" : 0,
@@ -71,14 +72,14 @@
 					"jsonFile" : "directory-test-Debug-f18be1977b403cfd1a50.json",
 					"minimumCMakeVersion" : 
 					{
-						"string" : "2.8"
+						"string" : "3.10"
 					},
 					"parentIndex" : 0,
 					"projectIndex" : 0,
 					"source" : "test",
 					"targetIndexes" : 
 					[
-						3
+						4
 					]
 				}
 			],
@@ -100,7 +101,8 @@
 						0,
 						1,
 						2,
-						3
+						3,
+						4
 					]
 				}
 			],
@@ -118,6 +120,13 @@
 					"id" : "sample_prime_numbers::@fd003194bc69d7fb51e8",
 					"jsonFile" : "target-sample_prime_numbers-Debug-a6fccfcb30c9352f005d.json",
 					"name" : "sample_prime_numbers",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "sample_traffic_lights::@fd003194bc69d7fb51e8",
+					"jsonFile" : "target-sample_traffic_lights-Debug-427fe0d3ced64f571573.json",
+					"name" : "sample_traffic_lights",
 					"projectIndex" : 0
 				},
 				{
