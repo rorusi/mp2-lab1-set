@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="D:\уник\mp2-lab1-set\src\tbitfield.cpp">
+    <ClCompile Include="D:\уник\mp2-lab1-set\traffic_lights\road.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\уник\mp2-lab1-set\src\tset.cpp">
+    <ClCompile Include="D:\уник\mp2-lab1-set\traffic_lights\trafficlights.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -23,7 +23,7 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="D:\уник\mp2-lab1-set\src\CMakeLists.txt" />
+    <CustomBuild Include="D:\уник\mp2-lab1-set\traffic_lights\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Header Files">

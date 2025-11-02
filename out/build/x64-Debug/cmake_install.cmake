@@ -38,6 +38,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("D:/уник/mp2-lab1-set/out/build/x64-Debug/samples/cmake_install.cmake")
   include("D:/уник/mp2-lab1-set/out/build/x64-Debug/gtest/cmake_install.cmake")
   include("D:/уник/mp2-lab1-set/out/build/x64-Debug/test/cmake_install.cmake")
+  include("D:/уник/mp2-lab1-set/out/build/x64-Debug/traffic_lights/cmake_install.cmake")
 
 endif()
 

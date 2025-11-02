@@ -7,6 +7,8 @@
 
 #include "tbitfield.h"
 
+const int elemSize = sizeof(TELEM) * 8;
+
 // Fake variables used as placeholders in tests
 static const int FAKE_INT = -1;
 static TBitField FAKE_BITFIELD(1);
@@ -17,7 +19,6 @@ TBitField::TBitField(int len)
 
     BitLen = len;
     
-    int  elemSize = sizeof(TELEM) * 8;
     MemLen = (len + (elemSize-1)) / elemSize;
     pMem = new TELEM[MemLen];
     for (int i = 0; i < MemLen; i++) 
@@ -47,15 +48,14 @@ int TBitField::GetMemIndex(const int n) const // индекс Мем для би
 {
     if ((n < 0) || (n > BitLen)) throw - 1;
 
-    return n/(sizeof(TELEM)*8);
+    return n >> (elemSize/2);
 }
 
 TELEM TBitField::GetMemMask(const int n) const // битовая маска для бита n
 {
     if ((n < 0) || (n > BitLen)) throw - 1;
 
-    int elemSize = sizeof(TELEM) * 8;
-    int bitPos = n % elemSize;
+    int bitPos = n & (elemSize-1);
 
     return (1 << bitPos);
 }
@@ -212,6 +212,8 @@ TBitField TBitField::operator~(void) // отрицание
     //{
     //    res.pMem[i] = ~(this->pMem[i]);
     //}
+    //int bitPos = BitLen & (elemSize-1);
+    //res.pMem[MemLen - 1] &= (1 << bitPos) - 1;
     for (int i = 0; i < (this->BitLen); i++)
         if (this->GetBit(i) == 0) res.SetBit(i);
 

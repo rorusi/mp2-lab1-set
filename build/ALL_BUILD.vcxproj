@@ -128,6 +128,10 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <Project>{732CBAE5-6742-3064-ACB0-C08CE52B0E14}</Project>
       <Name>test_set</Name>
     </ProjectReference>
+    <ProjectReference Include="D:\уник\mp2-lab1-set\build\traffic_lights\trafficlights.vcxproj">
+      <Project>{C9056AEC-E1E2-38FA-BC19-61D33C2C3776}</Project>
+      <Name>trafficlights</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

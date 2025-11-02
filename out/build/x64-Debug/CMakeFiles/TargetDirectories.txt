@@ -13,3 +13,6 @@ D:/уник/mp2-lab1-set/out/build/x64-Debug/gtest/CMakeFiles/rebuild_cache.dir
 D:/уник/mp2-lab1-set/out/build/x64-Debug/test/CMakeFiles/test_set.dir
 D:/уник/mp2-lab1-set/out/build/x64-Debug/test/CMakeFiles/edit_cache.dir
 D:/уник/mp2-lab1-set/out/build/x64-Debug/test/CMakeFiles/rebuild_cache.dir
+D:/уник/mp2-lab1-set/out/build/x64-Debug/traffic_lights/CMakeFiles/trafficlights.dir
+D:/уник/mp2-lab1-set/out/build/x64-Debug/traffic_lights/CMakeFiles/edit_cache.dir
+D:/уник/mp2-lab1-set/out/build/x64-Debug/traffic_lights/CMakeFiles/rebuild_cache.dir

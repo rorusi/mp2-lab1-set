@@ -5,7 +5,8 @@
 		"D:/\u0443\u043d\u0438\u043a/mp2-lab1-set/build/src/cmake_install.cmake",
 		"D:/\u0443\u043d\u0438\u043a/mp2-lab1-set/build/samples/cmake_install.cmake",
 		"D:/\u0443\u043d\u0438\u043a/mp2-lab1-set/build/gtest/cmake_install.cmake",
-		"D:/\u0443\u043d\u0438\u043a/mp2-lab1-set/build/test/cmake_install.cmake"
+		"D:/\u0443\u043d\u0438\u043a/mp2-lab1-set/build/test/cmake_install.cmake",
+		"D:/\u0443\u043d\u0438\u043a/mp2-lab1-set/build/traffic_lights/cmake_install.cmake"
 	],
 	"Parallel" : false
 }

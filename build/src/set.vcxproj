@@ -163,7 +163,9 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   <ItemGroup>
     <ClCompile Include="D:\уник\mp2-lab1-set\src\tbitfield.cpp" />
     <ClCompile Include="D:\уник\mp2-lab1-set\src\tset.cpp" />
+    <ClInclude Include="D:\уник\mp2-lab1-set\include\road.h" />
     <ClInclude Include="D:\уник\mp2-lab1-set\include\tbitfield.h" />
+    <ClInclude Include="D:\уник\mp2-lab1-set\include\trafficlights.h" />
     <ClInclude Include="D:\уник\mp2-lab1-set\include\tset.h" />
   </ItemGroup>
   <ItemGroup />
