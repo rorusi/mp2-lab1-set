@@ -146,7 +146,7 @@ build src\rebuild_cache: phony src\CMakeFiles\rebuild_cache.util
 #############################################
 # Order-only phony target for sample_prime_numbers
 
-build cmake_object_order_depends_target_sample_prime_numbers: phony || cmake_object_order_depends_target_set cmake_object_order_depends_target_trafficlights
+build cmake_object_order_depends_target_sample_prime_numbers: phony || cmake_object_order_depends_target_set
 
 build samples\CMakeFiles\sample_prime_numbers.dir\sample_prime_numbers.cpp.obj: CXX_COMPILER__sample_prime_numbers_unscanned_Debug D$:\уник\mp2-lab1-set\samples\sample_prime_numbers.cpp || cmake_object_order_depends_target_sample_prime_numbers
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
@@ -164,10 +164,10 @@ build samples\CMakeFiles\sample_prime_numbers.dir\sample_prime_numbers.cpp.obj: 
 #############################################
 # Link the executable bin\sample_prime_numbers.exe
 
-build bin\sample_prime_numbers.exe: CXX_EXECUTABLE_LINKER__sample_prime_numbers_Debug samples\CMakeFiles\sample_prime_numbers.dir\sample_prime_numbers.cpp.obj | lib\set.lib lib\trafficlights.lib || lib\set.lib lib\trafficlights.lib
+build bin\sample_prime_numbers.exe: CXX_EXECUTABLE_LINKER__sample_prime_numbers_Debug samples\CMakeFiles\sample_prime_numbers.dir\sample_prime_numbers.cpp.obj | lib\set.lib || lib\set.lib
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
   LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
-  LINK_LIBRARIES = lib\set.lib  lib\trafficlights.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  LINK_LIBRARIES = lib\set.lib  trafficlights.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
   OBJECT_DIR = samples\CMakeFiles\sample_prime_numbers.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
@@ -175,43 +175,6 @@ build bin\sample_prime_numbers.exe: CXX_EXECUTABLE_LINKER__sample_prime_numbers_
   TARGET_FILE = bin\sample_prime_numbers.exe
   TARGET_IMPLIB = lib\sample_prime_numbers.lib
   TARGET_PDB = bin\sample_prime_numbers.pdb
-
-# =============================================================================
-# Object build statements for EXECUTABLE target sample_traffic_lights
-
-
-#############################################
-# Order-only phony target for sample_traffic_lights
-
-build cmake_object_order_depends_target_sample_traffic_lights: phony || cmake_object_order_depends_target_set cmake_object_order_depends_target_trafficlights
-
-build samples\CMakeFiles\sample_traffic_lights.dir\sample_traffic_lights.cpp.obj: CXX_COMPILER__sample_traffic_lights_unscanned_Debug D$:\уник\mp2-lab1-set\samples\sample_traffic_lights.cpp || cmake_object_order_depends_target_sample_traffic_lights
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
-  INCLUDES = -ID:\уник\mp2-lab1-set\include -ID:\уник\mp2-lab1-set\gtest
-  OBJECT_DIR = samples\CMakeFiles\sample_traffic_lights.dir
-  OBJECT_FILE_DIR = samples\CMakeFiles\sample_traffic_lights.dir
-  TARGET_COMPILE_PDB = samples\CMakeFiles\sample_traffic_lights.dir\
-  TARGET_PDB = bin\sample_traffic_lights.pdb
-
-
-# =============================================================================
-# Link build statements for EXECUTABLE target sample_traffic_lights
-
-
-#############################################
-# Link the executable bin\sample_traffic_lights.exe
-
-build bin\sample_traffic_lights.exe: CXX_EXECUTABLE_LINKER__sample_traffic_lights_Debug samples\CMakeFiles\sample_traffic_lights.dir\sample_traffic_lights.cpp.obj | lib\set.lib lib\trafficlights.lib || lib\set.lib lib\trafficlights.lib
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
-  LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
-  LINK_LIBRARIES = lib\set.lib  lib\trafficlights.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
-  OBJECT_DIR = samples\CMakeFiles\sample_traffic_lights.dir
-  POST_BUILD = cd .
-  PRE_LINK = cd .
-  TARGET_COMPILE_PDB = samples\CMakeFiles\sample_traffic_lights.dir\
-  TARGET_FILE = bin\sample_traffic_lights.exe
-  TARGET_IMPLIB = lib\sample_traffic_lights.lib
-  TARGET_PDB = bin\sample_traffic_lights.pdb
 
 
 #############################################
@@ -386,47 +349,57 @@ build test\rebuild_cache: phony test\CMakeFiles\rebuild_cache.util
 # =============================================================================
 
 # =============================================================================
-# Object build statements for STATIC_LIBRARY target trafficlights
+# Object build statements for EXECUTABLE target trafficlights
 
 
 #############################################
 # Order-only phony target for trafficlights
 
-build cmake_object_order_depends_target_trafficlights: phony || .
+build cmake_object_order_depends_target_trafficlights: phony || cmake_object_order_depends_target_set
 
 build traffic_lights\CMakeFiles\trafficlights.dir\road.cpp.obj: CXX_COMPILER__trafficlights_unscanned_Debug D$:\уник\mp2-lab1-set\traffic_lights\road.cpp || cmake_object_order_depends_target_trafficlights
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
   INCLUDES = -ID:\уник\mp2-lab1-set\include -ID:\уник\mp2-lab1-set\gtest
   OBJECT_DIR = traffic_lights\CMakeFiles\trafficlights.dir
   OBJECT_FILE_DIR = traffic_lights\CMakeFiles\trafficlights.dir
-  TARGET_COMPILE_PDB = traffic_lights\CMakeFiles\trafficlights.dir\trafficlights.pdb
-  TARGET_PDB = lib\trafficlights.pdb
+  TARGET_COMPILE_PDB = traffic_lights\CMakeFiles\trafficlights.dir\
+  TARGET_PDB = bin\trafficlights.pdb
+
+build traffic_lights\CMakeFiles\trafficlights.dir\sample_traffic_lights.cpp.obj: CXX_COMPILER__trafficlights_unscanned_Debug D$:\уник\mp2-lab1-set\traffic_lights\sample_traffic_lights.cpp || cmake_object_order_depends_target_trafficlights
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
+  INCLUDES = -ID:\уник\mp2-lab1-set\include -ID:\уник\mp2-lab1-set\gtest
+  OBJECT_DIR = traffic_lights\CMakeFiles\trafficlights.dir
+  OBJECT_FILE_DIR = traffic_lights\CMakeFiles\trafficlights.dir
+  TARGET_COMPILE_PDB = traffic_lights\CMakeFiles\trafficlights.dir\
+  TARGET_PDB = bin\trafficlights.pdb
 
 build traffic_lights\CMakeFiles\trafficlights.dir\trafficlights.cpp.obj: CXX_COMPILER__trafficlights_unscanned_Debug D$:\уник\mp2-lab1-set\traffic_lights\trafficlights.cpp || cmake_object_order_depends_target_trafficlights
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
   INCLUDES = -ID:\уник\mp2-lab1-set\include -ID:\уник\mp2-lab1-set\gtest
   OBJECT_DIR = traffic_lights\CMakeFiles\trafficlights.dir
   OBJECT_FILE_DIR = traffic_lights\CMakeFiles\trafficlights.dir
-  TARGET_COMPILE_PDB = traffic_lights\CMakeFiles\trafficlights.dir\trafficlights.pdb
-  TARGET_PDB = lib\trafficlights.pdb
+  TARGET_COMPILE_PDB = traffic_lights\CMakeFiles\trafficlights.dir\
+  TARGET_PDB = bin\trafficlights.pdb
 
 
 # =============================================================================
-# Link build statements for STATIC_LIBRARY target trafficlights
+# Link build statements for EXECUTABLE target trafficlights
 
 
 #############################################
-# Link the static library lib\trafficlights.lib
+# Link the executable bin\trafficlights.exe
 
-build lib\trafficlights.lib: CXX_STATIC_LIBRARY_LINKER__trafficlights_Debug traffic_lights\CMakeFiles\trafficlights.dir\road.cpp.obj traffic_lights\CMakeFiles\trafficlights.dir\trafficlights.cpp.obj
-  LANGUAGE_COMPILE_FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
-  LINK_FLAGS = /machine:x64
+build bin\trafficlights.exe: CXX_EXECUTABLE_LINKER__trafficlights_Debug traffic_lights\CMakeFiles\trafficlights.dir\road.cpp.obj traffic_lights\CMakeFiles\trafficlights.dir\sample_traffic_lights.cpp.obj traffic_lights\CMakeFiles\trafficlights.dir\trafficlights.cpp.obj | lib\set.lib || lib\set.lib
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
+  LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
+  LINK_LIBRARIES = lib\set.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
   OBJECT_DIR = traffic_lights\CMakeFiles\trafficlights.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = traffic_lights\CMakeFiles\trafficlights.dir\trafficlights.pdb
-  TARGET_FILE = lib\trafficlights.lib
-  TARGET_PDB = lib\trafficlights.pdb
+  TARGET_COMPILE_PDB = traffic_lights\CMakeFiles\trafficlights.dir\
+  TARGET_FILE = bin\trafficlights.exe
+  TARGET_IMPLIB = lib\trafficlights.lib
+  TARGET_PDB = bin\trafficlights.pdb
 
 
 #############################################
@@ -462,10 +435,6 @@ build sample_prime_numbers: phony bin\sample_prime_numbers.exe
 
 build sample_prime_numbers.exe: phony bin\sample_prime_numbers.exe
 
-build sample_traffic_lights: phony bin\sample_traffic_lights.exe
-
-build sample_traffic_lights.exe: phony bin\sample_traffic_lights.exe
-
 build set: phony lib\set.lib
 
 build set.lib: phony lib\set.lib
@@ -474,9 +443,9 @@ build test_set: phony bin\test_set.exe
 
 build test_set.exe: phony bin\test_set.exe
 
-build trafficlights: phony lib\trafficlights.lib
+build trafficlights: phony bin\trafficlights.exe
 
-build trafficlights.lib: phony lib\trafficlights.lib
+build trafficlights.exe: phony bin\trafficlights.exe
 
 # =============================================================================
 # Folder targets.
@@ -500,7 +469,7 @@ build gtest\all: phony lib\gtest.lib
 #############################################
 # Folder: D:/уник/mp2-lab1-set/out/build/x64-Debug/samples
 
-build samples\all: phony bin\sample_prime_numbers.exe bin\sample_traffic_lights.exe
+build samples\all: phony bin\sample_prime_numbers.exe
 
 # =============================================================================
 
@@ -521,7 +490,7 @@ build test\all: phony bin\test_set.exe
 #############################################
 # Folder: D:/уник/mp2-lab1-set/out/build/x64-Debug/traffic_lights
 
-build traffic_lights\all: phony lib\trafficlights.lib
+build traffic_lights\all: phony bin\trafficlights.exe
 
 # =============================================================================
 # Built-in targets

@@ -4,7 +4,6 @@ D:/уник/mp2-lab1-set/out/build/x64-Debug/src/CMakeFiles/set.dir
 D:/уник/mp2-lab1-set/out/build/x64-Debug/src/CMakeFiles/edit_cache.dir
 D:/уник/mp2-lab1-set/out/build/x64-Debug/src/CMakeFiles/rebuild_cache.dir
 D:/уник/mp2-lab1-set/out/build/x64-Debug/samples/CMakeFiles/sample_prime_numbers.dir
-D:/уник/mp2-lab1-set/out/build/x64-Debug/samples/CMakeFiles/sample_traffic_lights.dir
 D:/уник/mp2-lab1-set/out/build/x64-Debug/samples/CMakeFiles/edit_cache.dir
 D:/уник/mp2-lab1-set/out/build/x64-Debug/samples/CMakeFiles/rebuild_cache.dir
 D:/уник/mp2-lab1-set/out/build/x64-Debug/gtest/CMakeFiles/gtest.dir

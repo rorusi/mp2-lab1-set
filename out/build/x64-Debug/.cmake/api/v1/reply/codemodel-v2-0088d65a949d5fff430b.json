@@ -34,7 +34,7 @@
 					"source" : "src",
 					"targetIndexes" : 
 					[
-						3
+						2
 					]
 				},
 				{
@@ -49,8 +49,7 @@
 					"source" : "samples",
 					"targetIndexes" : 
 					[
-						1,
-						2
+						1
 					]
 				},
 				{
@@ -80,7 +79,7 @@
 					"source" : "test",
 					"targetIndexes" : 
 					[
-						4
+						3
 					]
 				},
 				{
@@ -95,7 +94,7 @@
 					"source" : "traffic_lights",
 					"targetIndexes" : 
 					[
-						5
+						4
 					]
 				}
 			],
@@ -119,8 +118,7 @@
 						1,
 						2,
 						3,
-						4,
-						5
+						4
 					]
 				}
 			],
@@ -136,21 +134,14 @@
 				{
 					"directoryIndex" : 2,
 					"id" : "sample_prime_numbers::@fd003194bc69d7fb51e8",
-					"jsonFile" : "target-sample_prime_numbers-Debug-f06fbf2ff74c7150f24a.json",
+					"jsonFile" : "target-sample_prime_numbers-Debug-51e55daa9f290acbe2ff.json",
 					"name" : "sample_prime_numbers",
-					"projectIndex" : 0
-				},
-				{
-					"directoryIndex" : 2,
-					"id" : "sample_traffic_lights::@fd003194bc69d7fb51e8",
-					"jsonFile" : "target-sample_traffic_lights-Debug-948a8af3f733e9091e1b.json",
-					"name" : "sample_traffic_lights",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 1,
 					"id" : "set::@145eef247bfb46b6828c",
-					"jsonFile" : "target-set-Debug-a1c173d09403c698aaa8.json",
+					"jsonFile" : "target-set-Debug-7acf31af7b3bfc8c7bc2.json",
 					"name" : "set",
 					"projectIndex" : 0
 				},
@@ -164,7 +155,7 @@
 				{
 					"directoryIndex" : 5,
 					"id" : "trafficlights::@8b31497fd0750ceae56f",
-					"jsonFile" : "target-trafficlights-Debug-e342cb4baeb6b2e4fc11.json",
+					"jsonFile" : "target-trafficlights-Debug-5259dea9f4f41a300c3d.json",
 					"name" : "trafficlights",
 					"projectIndex" : 0
 				}
